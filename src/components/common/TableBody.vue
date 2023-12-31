@@ -1,0 +1,20 @@
+<template>
+  <n-card class="table-body-container" :content-style="{ padding: '0px' }">
+    <slot name="header"></slot>
+    <slot name="default"></slot>
+    <slot name="footer"></slot>
+  </n-card>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+export default defineComponent({
+  name: 'TableBody',
+})
+</script>
+<style lang="scss" scoped>
+.table-body-container {
+  background-color: #fff;
+  padding: 20px;
+}
+</style>
